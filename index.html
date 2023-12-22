@@ -33,9 +33,23 @@
     </div>
   </header>
   <main>
-    <nav>
+    <nav id="categories">
 <!-- TODO : Réaliser la barre de navigation des différentes catégories -->
+      <!-- Notes : le chocolate et le hamburger menu sont pour mettre les éléments en ligne, ou sous forme de cadrillage -->
+
+      <ul>
+        <li><a href="#"><img src="img/chocolate-menu.png" alt="click here to set articles to grid display"></a></li>
+        <li><a href="#"><img src="img/hamburger-menu.png" alt="click here to set articles to inline display"></a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#">DevOps</a></li>
+        <li><a href="#">Cloud</a></li>
+        <li><a href="#">Terraform</a></li>
+        <li><a href="#">Architecture</a></li>
+        <li><a href="#">Scalability</a></li>
+        <li><a href="#">Explainers</a></li>
+      </ul>
     </nav>
+    <section id="articles">
     <!-- TODO : Créer des articles (9articles) :
       - Un wrapper blanc qui contient
        - Une img
@@ -44,9 +58,82 @@
        - Une date
        - La section attribué
     -->
-  </main>
-<footer>
 
+      <article>
+        <img src="img/img1.png" alt="">
+        <h2>Build continuous integration pipelines with Github Actions</h2>
+        <p>
+          GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications
+        </p>
+        <time datetime="2022-06-24">June 24,2022</time>
+        <p>DevOps</p>
+      </article>
+      <article>
+        <img src="img/img2.png" alt="">
+        <h2>Python for the Absolute beginners</h2>
+        <p>
+          Python is the most popular programming language out htere and it is used so many different industries
+        </p>
+        <time datetime="2022-06-24">June 24,2022</time>
+        <p>DevOps</p>
+      </article>
+      <article>
+        <img src="img/img3.png" alt="">
+        <h2>Docker from Zero to Hero</h2>
+        <p>
+          Lean what is Docker and how Docker is used in the whole software development process
+        </p>
+        <time datetime="2022-06-24">June 24,2022</time>
+        <p>DevOps</p>
+      </article>
+      <article>
+        <img src="img/img4.png" alt="">
+        <h2>Build continuous integration pipelines with Github Actions</h2>
+        <p>
+          GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications
+        </p>
+        <time datetime="2022-06-24">June 24,2022</time>
+        <p>DevOps</p>
+      </article>
+      <article>
+        <img src="img/img5.png" alt="">
+        <h2>Build continuous integration pipelines with Github Actions</h2>
+        <p>
+          GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications
+        </p>
+        <time datetime="2022-06-24">June 24,2022</time>
+        <p>DevOps</p>
+      </article>
+      <article>
+        <img src="img/img6.png" alt="">
+        <h2>Build continuous integration pipelines with Github Actions</h2>
+        <p>
+          GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications
+        </p>
+        <time datetime="2022-06-24">June 24,2022</time>
+        <p>DevOps</p>
+      </article>
+    </section>
+    <section id="pagination">
+      <ul>
+        <li><a href="#" id="previous">Previous</a></li>
+        <li><a href="#" id="page-1">1</a></li>
+        <li><a href="#" id="page-2">2</a></li>
+        <li><a href="#" id="page-3">3</a></li>
+        <li><a href="#" id="page-4">4</a></li>
+        <li><a href="#" id="page-5">5</a></li>
+        <li><a href="#" id="next">Next</a></li>
+      </ul>
+    </section>
+  </main>
+<footer id="about">
+  <section>
+    <a href="#">writing.dev</a>
+    <a href="https://twitter.com/kamrify">by &#64;kamrify</a>
+  </section>
+  <section>
+    <a href="https://twitter.com"><i class=""></i>Follow &#64;writingsdev</a>
+  </section>
 </footer>
 </body>
 

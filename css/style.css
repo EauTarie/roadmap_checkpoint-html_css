@@ -205,8 +205,9 @@ article p {
   font-weight:600;
 }
 
-#twitter-button {
+#twitter-button a {
   display:flex;
+  align-items: center;
   gap:10px;
 }
 

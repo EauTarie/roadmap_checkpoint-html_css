@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Writings for Developers</title>
   <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+    rel="stylesheet"
+  />
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -32,11 +36,9 @@
       <h2>Curated collection of articles for busy developers</h2>
     </div>
   </header>
+  <hr id="top-article-hr">
   <main>
     <nav id="categories">
-<!-- TODO : Réaliser la barre de navigation des différentes catégories -->
-      <!-- Notes : le chocolate et le hamburger menu sont pour mettre les éléments en ligne, ou sous forme de cadrillage -->
-
       <ul>
         <li><a href="#"><img src="img/chocolate-menu.png" alt="click here to set articles to grid display"></a></li>
         <li><a href="#"><img src="img/hamburger-menu.png" alt="click here to set articles to inline display"></a></li>
@@ -50,15 +52,6 @@
       </ul>
     </nav>
     <section id="articles">
-    <!-- TODO : Créer des articles (9articles) :
-      - Un wrapper blanc qui contient
-       - Une img
-       - Une balise h2
-       - Un p avec du contenu
-       - Une date
-       - La section attribué
-    -->
-
       <article>
         <img src="img/img1.png" alt="">
         <h2>Build continuous integration pipelines with Github Actions</h2>
@@ -67,6 +60,7 @@
         </p>
         <div class="published">
           <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
           <p>DevOps</p>
         </div>
       </article>
@@ -78,6 +72,7 @@
         </p>
         <div class="published">
           <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
           <p>DevOps</p>
         </div>
       </article>
@@ -89,6 +84,7 @@
         </p>
         <div class="published">
           <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
           <p>DevOps</p>
         </div>
       </article>
@@ -100,6 +96,7 @@
         </p>
         <div class="published">
           <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
           <p>DevOps</p>
         </div>
       </article>
@@ -111,6 +108,7 @@
         </p>
         <div class="published">
           <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
           <p>DevOps</p>
         </div>
       </article>
@@ -122,6 +120,43 @@
         </p>
         <div class="published">
           <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
+          <p>DevOps</p>
+        </div>
+      </article>
+      <article>
+        <img src="img/img7.png" alt="">
+        <h2>Build continuous integration pipelines with Github Actions</h2>
+        <p>
+          GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications
+        </p>
+        <div class="published">
+          <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
+          <p>DevOps</p>
+        </div>
+      </article>
+      <article>
+        <img src="img/img8.png" alt="">
+        <h2>Build continuous integration pipelines with Github Actions</h2>
+        <p>
+          GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications
+        </p>
+        <div class="published">
+          <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
+          <p>DevOps</p>
+        </div>
+      </article>
+      <article>
+        <img src="img/img9.png" alt="">
+        <h2>Build continuous integration pipelines with Github Actions</h2>
+        <p>
+          GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications
+        </p>
+        <div class="published">
+          <time datetime="2022-06-24">June 24,2022</time>
+          <i>&#183;</i>
           <p>DevOps</p>
         </div>
       </article>
@@ -129,7 +164,7 @@
     <section id="pagination">
       <ul>
         <li><a href="#" id="previous">Previous</a></li>
-        <li><a href="#" id="page-1">1</a></li>
+        <li id="active"><a href="#" id="page-1">1</a></li>
         <li><a href="#" id="page-2">2</a></li>
         <li><a href="#" id="page-3">3</a></li>
         <li><a href="#" id="page-4">4</a></li>
@@ -138,13 +173,14 @@
       </ul>
     </section>
   </main>
+  <hr id="bottom-article-hr">
 <footer id="about">
   <section>
-    <a href="#">writing.dev</a>
-    <a href="https://twitter.com/kamrify">by &#64;kamrify</a>
+    <a id="website-link-footer" href="#">writing.dev</a>
+    <a class="button" href="https://twitter.com/kamrify">by &#64;kamrify</a>
   </section>
-  <section>
-    <a href="https://twitter.com"><i class=""></i>Follow &#64;writingsdev</a>
+  <section id="twitter-button">
+    <a class="button" href="https://twitter.com"><img src="img/twitter-logo.png" alt="Twitter link">Follow &#64;writingsdev</a>
   </section>
 </footer>
 </body>

@@ -5,7 +5,8 @@
   --font-color-article:#0F1217;
   --font-color-nav: #909090;
   --background-color-button: #4699E0;
-
+  --border-color-nav: #4D4D4D;
+  --border-color-nav_active: 3px solid #FF7575;
 }
 
 * {
@@ -24,12 +25,18 @@ a {
   text-decoration:none;
 }
 
+hr {
+  background-color: var(--border-color-nav);
+  border:none;
+  height:3px;
+}
+
 body {
   background-color:var(--background-color-primary);
   font-family: "Recursive", "Trujillo", sans-serif;
 }
 
-header, main {
+header, main, footer {
   margin-left:216px;
   margin-right:216px;
 }
@@ -44,6 +51,8 @@ header {
 }
 
 #header-nav a {
+  font-size:30px;
+  font-weight:400;
   color:var(--font-color-primary);
 }
 
@@ -78,37 +87,129 @@ nav li:not(:first-child) {
 #banner h1 {
   color:var(--font-color-secondary);
   font-size:4.5rem;
+  font-weight:400;
+}
+
+#banner h2 {
+  font-size:1.8rem;
+  font-weight:400;
+}
+#top-article-hr {
+  margin-top:96px;
+}
+
+main {
+  padding-bottom:150px;
 }
 
 #categories ul {
   display:flex;
   justify-content:space-between;
-  margin-top:96px;
+  padding-top:20px;
 }
 
 #categories a{
   color: var(--font-color-nav);
   font-size:1.6rem;
 }
+
 #articles {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap:37px;
+  margin-top:96px;
+  margin-bottom:90px;
 }
 
 article {
   background-color:var(--font-color-primary);
   display:flex;
   flex-direction:column;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center;
   gap:20px;
   padding:26px;
-  margin-top:96px;
-  margin-bottom:90px;
   border-radius:22px;
 }
 
 article img {
   width:100%;
+}
+
+article h2 {
+  font-size:1.2rem;
+}
+
+article p {
+  font-size:1rem;
+}
+
+.published {
+  width:100%;
+  gap:20px;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.published i {
+  font-weight:700;
+}
+
+#pagination ul {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  column-gap: 45px;
+}
+
+#active {
+  color:var(--font-color-secondary);
+  border-top:var(--border-color-nav_active);
+  padding:10px;
+}
+
+#pagination a {
+  color:var(--font-color-nav);
+  font-size:1.5rem;
+  font-weight:400;
+}
+
+#active a {
+  color: var(--font-color-secondary);
+}
+
+#bottom-article-hr {
+  margin-bottom:96px;
+}
+
+#about {
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:120px;
+}
+
+#website-link-footer {
+  font-size:1.875rem;
+  margin-right:15px;
+}
+
+#about a {
+  color:#FFFFFF;
+}
+
+.button {
+  background-color:var(--background-color-button);
+  padding:5px 16px;
+  border-radius:5px;
+  font-size:1.2rem;
+  font-weight:600;
+}
+
+#twitter-button {
+  display:flex;
+  gap:10px;
+}
+
+.button img {
+  width:20px;
 }
